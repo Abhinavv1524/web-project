@@ -74,15 +74,17 @@ const updatePreview = () => {
   downloadButton.addEventListener("click", downloadCode);
 
   // Initial preview update with default code
-  htmlCode.value = `<h1>Hello World!</h1>
-    <p>Welcome to your live coding editor.</p>`;
-  cssCode.value = `body {
+  htmlCode.value = `<div class='welcome'>
+  <h1 class='h1'>Hello World!</h1>
+  <p>Welcome to your live coding editor.</p>
+</div>`;
+  cssCode.value = `.welcome {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       padding: 20px;
     }
     
-    h1 {
+    .h1 {
       color: #007acc;
     }`;
   jsCode.value = `console.log("Your JavaScript is running!");`;
